@@ -1,0 +1,645 @@
+
+/* Colour palette */
+
+:root {
+    --navy: #162D43;
+    --teal: #1C7278;
+    --mint: #74D6C7;
+    --background: #F5F7FA;
+    --text: #203345;
+    --muted: #526475;
+}
+
+/* General design */
+
+body {
+    font-family: "Inter", "Segoe UI", sans-serif;
+    background-color: var(--background);
+    color: var(--text);
+    line-height: 1.8;
+    font-size: 17px;
+}
+
+/* Navigation */
+
+.navbar {
+    background-color: var(--navy) !important;
+    padding: 14px 25px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.navbar-brand {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.navbar .nav-link {
+    font-size: 16px;
+    margin: 0 8px;
+    color: white !important;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+    color: var(--mint) !important;
+}
+
+/* Headings */
+
+h1 {
+    font-family: Georgia, serif;
+    font-size: 48px;
+    font-weight: 500;
+    color: var(--navy);
+}
+
+h2 {
+    font-size: 26px;
+    font-weight: 600;
+    color: var(--navy);
+    border-bottom: 2px solid var(--teal);
+    padding-bottom: 12px;
+    margin-top: 40px;
+}
+
+h3 {
+    color: var(--teal);
+    font-weight: 600;
+}
+
+/* Main content */
+
+main.content {
+    padding-top: 40px;
+    padding-bottom: 60px;
+}
+
+/* Links */
+
+a {
+    color: var(--teal);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+
+.nav-footer {
+    background-color: var(--navy);
+    color: #C2CFDA !important;
+    padding: 20px;
+}
+
+.nav-footer a {
+    color: white;
+}
+
+
+/* ==========================
+   HOMEPAGE
+   ========================== */
+
+.homepage {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Profile section */
+
+.hero {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+    gap: 65px;
+    padding: 45px 0;
+}
+
+.eyebrow {
+    color: var(--teal);
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.hero h1 {
+    font-size: 64px;
+    margin: 15px 0;
+}
+
+.accent-line {
+    width: 65px;
+    height: 4px;
+    background-color: var(--teal);
+    margin: 25px 0;
+}
+
+.intro {
+    font-size: 19px;
+    color: var(--muted);
+    line-height: 1.8;
+}
+
+.profile-button {
+    display: inline-block;
+    background-color: var(--teal);
+    color: white !important;
+    padding: 10px 24px;
+    border-radius: 5px;
+    margin-top: 15px;
+    transition: background-color 0.2s;
+}
+
+.profile-button:hover {
+    background-color: var(--navy);
+    text-decoration: none;
+}
+
+/* Profile photo */
+
+.profile-placeholder {
+    aspect-ratio: 3 / 4;
+    max-width: 280px;
+    width: 100%;
+    margin: auto;
+    background-color: #E0E8EC;
+    color: #8499AA;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-photo {
+    width: 100%;
+    max-width: 280px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+/* Research cards */
+
+.research-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px;
+    margin-top: 30px;
+}
+
+.research-card {
+    background: white;
+    border: 1px solid #DFE6EC;
+    border-top: 4px solid var(--teal);
+    border-radius: 8px;
+    padding: 25px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.035);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.research-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+.research-card h3 {
+    font-size: 21px;
+    color: var(--navy);
+    margin-top: 0;
+    margin-bottom: 12px;
+}
+
+.research-card p {
+    color: var(--muted);
+    font-size: 15px;
+    margin-bottom: 0;
+}
+
+/* Mobile version */
+
+@media (max-width: 768px) {
+    .hero {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        padding: 20px 0;
+    }
+
+    .hero h1 {
+        font-size: 44px;
+    }
+
+    .research-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .homepage {
+        padding: 10px;
+    }
+}
+
+
+/* Hide the automatic Quarto title */
+
+
+
+/* Homepage without profile photo */
+
+.hero {
+    grid-template-columns: 1fr;
+    gap: 0;
+    padding: 60px 0 35px;
+}
+
+.hero-text {
+    max-width: 850px;
+}
+
+.hero h1 {
+    font-size: clamp(44px, 6vw, 72px);
+}
+
+.intro {
+    max-width: 750px;
+}
+
+
+/* ==========================
+   RESEARCH ICONS
+   ========================== */
+
+.research-icon {
+    display: block;
+    font-size: 28px;
+    color: var(--teal);
+    margin-bottom: 15px;
+}
+
+
+/* ==========================
+   SELECTED PROJECTS
+   ========================== */
+
+.project-list {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    margin-top: 30px;
+}
+
+.project-card {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    background: white;
+    padding: 25px;
+    border: 1px solid #DFE6EC;
+    border-radius: 8px;
+    transition: box-shadow 0.2s;
+}
+
+.project-card:hover {
+    box-shadow: 0 5px 20px rgba(0,0,0,0.07);
+}
+
+.project-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 100px;
+    height: 100px;
+    background-color: var(--navy);
+    color: var(--mint);
+    font-size: 38px;
+    border-radius: 6px;
+}
+
+.project-description {
+    flex: 1;
+}
+
+.project-description h3 {
+    color: var(--navy);
+    font-size: 21px;
+    margin: 0 0 5px;
+}
+
+.project-meta {
+    color: var(--teal);
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.project-description p {
+    color: var(--muted);
+    font-size: 15px;
+    margin: 10px 0 0;
+}
+
+
+/* ==========================
+   METHODS AND TOOLS
+   ========================== */
+
+.skills-section {
+    background-color: white;
+    border: 1px solid #DFE6EC;
+    border-radius: 8px;
+    padding: 30px;
+    margin-top: 30px;
+}
+
+.skills-section h3 {
+    color: var(--navy);
+    font-size: 18px;
+    margin: 25px 0 12px;
+}
+
+.skills-section h3:first-child {
+    margin-top: 0;
+}
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skill-tag {
+    display: inline-block;
+    background-color: #E4EFF0;
+    color: var(--teal);
+    font-size: 14px;
+    font-weight: 500;
+    padding: 6px 14px;
+    border-radius: 5px;
+}
+
+
+/* ==========================
+   MOBILE LAYOUT
+   ========================== */
+
+@media (max-width: 768px) {
+    .project-card {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 18px;
+    }
+
+    .project-icon {
+        width: 65px;
+        height: 65px;
+        font-size: 28px;
+    }
+
+    .skills-section {
+        padding: 20px;
+    }
+}
+
+
+.publication-title {
+    font-family: Georgia, serif;
+    color: var(--navy);
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1.4;
+    margin-bottom: 25px;
+}
+
+
+.coming-soon {
+    text-align: center;
+    padding: 30px 20px 35px;
+}
+
+.coming-soon i {
+    display: block;
+    font-size: 22px;
+    color: var(--teal);
+    margin-bottom: 10px;
+}
+
+.coming-soon p {
+    font-size: 16px;
+    color: var(--muted);
+    margin: 0;
+}
+
+
+/* ==========================
+   CURRICULUM VITAE
+   ========================== */
+
+.cv-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.cv-header .intro {
+    margin: 0;
+}
+
+.cv-header .profile-button {
+    margin: 0;
+}
+
+.cv-icon {
+    color: var(--teal);
+    margin-right: 10px;
+}
+
+.cv-section {
+    background: white;
+    border: 1px solid #DFE6EC;
+    border-radius: 8px;
+    padding: 30px;
+    margin-top: 25px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.035);
+}
+
+.cv-entry {
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    gap: 25px;
+    padding: 25px 0;
+    border-bottom: 1px solid #DFE6EC;
+}
+
+.cv-entry:first-child {
+    padding-top: 0;
+}
+
+.cv-entry:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.cv-date {
+    color: var(--teal);
+    font-weight: 600;
+    font-size: 15px;
+    padding-top: 3px;
+}
+
+.cv-details h3 {
+    color: var(--navy);
+    font-size: 22px;
+    font-weight: 600;
+    margin: 0 0 6px;
+}
+
+.cv-details p {
+    font-size: 16px;
+    color: var(--muted);
+    line-height: 1.7;
+    margin-bottom: 10px;
+}
+
+.cv-details .cv-institution {
+    color: var(--teal);
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.language-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 0;
+    border-bottom: 1px solid #DFE6EC;
+    color: var(--navy);
+}
+
+.language-row:last-child {
+    border-bottom: none;
+}
+
+.language-row span {
+    color: var(--muted);
+}
+
+@media (max-width: 768px) {
+    .cv-entry {
+        grid-template-columns: 1fr;
+        gap: 8px;
+    }
+
+    .cv-section {
+        padding: 20px;
+    }
+
+    .cv-details h3 {
+        font-size: 20px;
+    }
+}
+
+
+/* ==========================
+   CONTACT
+   ========================== */
+
+.contact-card {
+    max-width: 650px;
+    margin: 40px auto;
+    padding: 60px 30px;
+    background: white;
+    border: 1px solid #DFE6EC;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.04);
+}
+
+.contact-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 25px;
+    background: #E4EFF0;
+    color: var(--teal);
+    border-radius: 50%;
+    font-size: 34px;
+}
+
+.contact-card h3 {
+    font-family: Georgia, serif;
+    font-size: 32px;
+    font-weight: 500;
+    color: var(--navy);
+    margin-bottom: 15px;
+}
+
+.contact-card p {
+    color: var(--muted);
+}
+
+.contact-email {
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--teal);
+    margin-top: 10px;
+}
+
+
+/* Contact page layout */
+
+.contact-page {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.contact-page h1 {
+    margin: 0 0 20px;
+    text-align: center;
+}
+
+.contact-line {
+    width: 60px;
+    height: 3px;
+    background-color: var(--teal);
+    margin: 0 auto 40px;
+}
+
+.contact-card {
+    max-width: 480px;
+    margin: 0 auto;
+    padding: 35px 25px;
+}
+
+.contact-icon {
+    width: 65px;
+    height: 65px;
+    font-size: 28px;
+    margin: 0 auto 20px;
+}
+
+.contact-email {
+    margin-top: 0;
+    overflow-wrap: anywhere;
+}
+
+
+.contact-title {
+    font-family: Georgia, serif;
+    font-size: 48px;
+    font-weight: 500;
+    color: var(--navy);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact-page {
+    padding-top: 30px;
+}

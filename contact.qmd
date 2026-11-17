@@ -1,0 +1,27 @@
+
+---
+pagetitle: "Contact"
+page-layout: full
+---
+
+<div class="contact-page">
+
+<div class="contact-title">Contact</div>
+
+<div class="contact-line"></div>
+
+<div class="contact-card">
+
+<div class="contact-icon">
+<i class="bi bi-envelope"></i>
+</div>
+
+<p>Feel free to contact me via email.</p>
+
+<a class="contact-email" href="mailto:martin_preiss@mail.de">
+martin_preiss@mail.de
+</a>
+
+</div>
+
+</div>

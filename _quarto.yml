@@ -1,0 +1,36 @@
+
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "Martin Preiß"
+  site-url: https://preiss-martin.github.io
+
+  navbar:
+    background: "#162D43"
+    foreground: "#FFFFFF"
+    left:
+      - href: index.qmd
+        text: Home
+      - href: research.qmd
+        text: Research
+      - href: projects.qmd
+        text: Projects
+      - href: cv.qmd
+        text: CV
+      - href: contact.qmd
+        text: Contact
+    right:
+      - icon: github
+        href: https://github.com/preiss-martin
+
+  page-footer:
+    left: "© 2026 Martin Preiß"
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: false
+    lang: en

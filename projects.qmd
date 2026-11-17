@@ -1,0 +1,55 @@
+---
+title: "Projects"
+page-layout: full
+---
+
+<div class="homepage">
+
+<p class="intro">
+A selection of projects in data analysis, machine learning
+and computational social science.
+</p>
+
+<div class="portfolio-grid">
+
+<div class="portfolio-card">
+
+<div class="portfolio-cover">
+<i class="bi bi-globe-americas"></i>
+</div>
+
+<div class="portfolio-content">
+
+<h3>Satellite Image Classification</h3>
+
+<p>
+Classification of satellite imagery using convolutional
+neural networks and the EuroSAT dataset to identify
+different land-use and land-cover categories.
+</p>
+
+<div class="skills-list">
+<span class="skill-tag">Python</span>
+<span class="skill-tag">TensorFlow</span>
+<span class="skill-tag">Keras</span>
+<span class="skill-tag">EuroSAT</span>
+<span class="skill-tag">CNN</span>
+</div>
+
+<p class="project-status">
+Project documentation coming soon
+</p>
+
+</div>
+</div>
+
+</div>
+
+<h2>Further Projects</h2>
+
+<div class="coming-soon">
+<i class="bi bi-folder2-open"></i>
+<p>Coming soon</p>
+</div>
+
+</div>

@@ -1,0 +1,77 @@
+
+---
+title: "Research"
+page-layout: full
+---
+
+<div class="homepage">
+
+<h2>Master's Thesis</h2>
+
+<div class="publication-card">
+
+<div class="publication-type">
+Master's Thesis · 2026
+</div>
+
+<h3 class="publication-title">
+Welche Faktoren erklären Wahlbeteiligung?
+Ein Vergleich erklärender statistischer mit explorativen
+Machine-Learning Ansätzen am Beispiel der Bundestagswahl 2017
+</h3>
+
+<p class="publication-author">Martin Preiß</p>
+
+<p class="publication-affiliation">
+Department of Political Science · University of Freiburg
+</p>
+
+<hr>
+
+<h4>Abstract</h4>
+
+<p>
+This thesis examines voter turnout in the 2017 German
+federal election using data from the GESIS Panel Core
+Studies. A theory-driven logistic regression model with
+12 predictors is compared with two exploratory machine
+learning models, Random Forest and XGBoost, trained on
+222 predictors.
+</p>
+
+<p>
+All three models identify previous electoral participation,
+voting norms and political interest as central predictors.
+Machine learning additionally reveals patterns related to
+media consumption and political trust, while offering modest
+improvements in predictive performance. The findings highlight
+the complementary role of explanatory and predictive
+modelling in political science.
+</p>
+
+<div class="skills-list">
+<span class="skill-tag">Voter Turnout</span>
+<span class="skill-tag">Electoral Research</span>
+<span class="skill-tag">Machine Learning</span>
+<span class="skill-tag">Logistic Regression</span>
+<span class="skill-tag">Random Forest</span>
+<span class="skill-tag">XGBoost</span>
+<span class="skill-tag">GESIS Panel</span>
+<span class="skill-tag">R</span>
+</div>
+
+<a class="profile-button" href="files/master-thesis.pdf"
+target="_blank" rel="noopener">
+<i class="bi bi-file-earmark-pdf"></i> Read Thesis (PDF)
+</a>
+
+</div>
+
+<h2>Further Research</h2>
+
+<div class="coming-soon">
+<i class="bi bi-book"></i>
+<p>Coming soon</p>
+</div>
+
+</div>
