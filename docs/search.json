@@ -1,24 +1,24 @@
 [
   {
-    "objectID": "research.html",
-    "href": "research.html",
-    "title": "Research",
+    "objectID": "satellite-classifier.html",
+    "href": "satellite-classifier.html",
+    "title": "Satellite Image Classification",
     "section": "",
-    "text": "Master’s Thesis\n\n\n\nMaster’s Thesis · 2026\n\n\nWelche Faktoren erklären Wahlbeteiligung? Ein Vergleich erklärender statistischer mit explorativen Machine-Learning Ansätzen am Beispiel der Bundestagswahl 2017\n\n\nMartin Preiß\n\n\nDepartment of Political Science · University of Freiburg\n\n\n\nAbstract\n\n\nThis thesis examines voter turnout in the 2017 German federal election using data from the GESIS Panel Core Studies. A theory-driven logistic regression model with 12 predictors is compared with two exploratory machine learning models, Random Forest and XGBoost, trained on 222 predictors.\n\n\nAll three models identify previous electoral participation, voting norms and political interest as central predictors. Machine learning additionally reveals patterns related to media consumption and political trust, while offering modest improvements in predictive performance. The findings highlight the complementary role of explanatory and predictive modelling in political science.\n\n\nVoter Turnout Electoral Research Machine Learning Logistic Regression Random Forest XGBoost GESIS Panel R\n\n  Read Thesis (PDF) \n\n\nFurther Research\n\n\n\n\nComing soon"
+    "text": "← Back to projects\nThis project explores how deep learning can automate land-cover classification from multispectral Sentinel-2 satellite imagery. The convolutional neural network (CNN) distinguishes vegetation from non-vegetation. Such methods can support environmental monitoring, agricultural analysis and urban planning by reducing the need for manual image interpretation. This demonstration illustrates binary patch classification, not a complete monitoring system.\n98.37% reported test accuracy · 27,000 dataset images · 2,700 test images"
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "\nMartin Preiß\n",
-    "section": "",
-    "text": "Political Science | Data Science\n\n\nMartin Preiß\n\n\n\n\n\nI am a political scientist with a Master’s degree from the University of Freiburg. My research interests lie at the intersection of political science and data science, with a focus on political behaviour and quantitative research methods.\n\n\nI am interested in the application of machine learning and computational methods to social science research. My previous work includes electoral research, survey data analysis and the exploration of AI-based research methods.\n\nExplore my research →\n\n\n\nResearch Interests\n\n\n\n\n\nPolitical Behaviour\n\n\nVoting behaviour, electoral participation and public opinion\n\n\n\n\n\nQuantitative Research\n\n\nSurvey research, statistical modelling and causal inference\n\n\n\n\n\nComputational Social Science\n\n\nMachine learning and computational research methods\n\n\n\n\n\nArtificial Intelligence\n\n\nApplications of AI in social science and its political and ethical implications\n\n\n\n\n\nPolitical Communication\n\n\nDigital public spheres and political microtargeting\n\n\n\n\n\nInternational Relations\n\n\nGeoeconomics and technology policy\n\n\n\n\nSelected Projects\n\n\n\n\n\n\n\n\nExplaining Voter Turnout\n\nMaster’s Thesis · R · Machine Learning\n\nComparing classical statistical methods and machine learning approaches to explain voter turnout.\n\n\n\n\n\n\n\n\n\nSatellite Image Classification\n\nPython · TensorFlow · Deep Learning\n\nLand-use and land-cover classification using convolutional neural networks.\n\n\n\n\n\n\n\n\n\nSynthetic Survey Data\n\nPython · LLMs · AI Agents\n\nExploring the potential of large language models for generating synthetic survey respondents.\n\n\n\n\nView all projects →\n\nMethods & Tools\n\n\n\nProgramming\n\n\nR Python SQL\n\n\nResearch Methods\n\n\nSurvey Analysis Regression Analysis Machine Learning Data Visualisation\n\n\nSoftware & Tools\n\n\nGit GitHub Quarto LaTeX QGIS TensorFlow"
+    "objectID": "satellite-classifier.html#interactive-demo",
+    "href": "satellite-classifier.html#interactive-demo",
+    "title": "Satellite Image Classification",
+    "section": "Interactive demo",
+    "text": "Interactive demo\nChoose an example image and run the trained model directly in your browser.\n\n\n\n\n\n\n\nNoteAbout the model\n\n\n\n\n\nThe CNN uses red, near-infrared and NDVI inputs from EuroSAT-MS. The reported accuracy comes from a random held-out test split and does not establish geographic generalisation. Demo images may overlap the training data. The model groups entire patches, rather than assigning a land-cover class to each pixel.\nDataset: EuroSAT (Helber et al.)."
   },
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
+    "objectID": "projects.html",
+    "href": "projects.html",
+    "title": "Projects",
     "section": "",
-    "text": "About this site"
+    "text": "A selection of projects in data analysis, machine learning and computational social science.\n\n\n\n\n\n\n\n\nSatellite Image Classification\n\n\nAn interactive deep learning application for vegetation classification using multispectral Sentinel-2 satellite imagery and the EuroSAT dataset.\n\n\nExplore different spectral representations and classify satellite images in real time using a trained convolutional neural network.\n\n\nPython TensorFlow Keras EuroSAT CNN NDVI JavaScript\n\n Explore project → \n\n\n\n\nFurther Projects\n\n\n\n\nComing soon"
   },
   {
     "objectID": "contact.html",
@@ -28,10 +28,17 @@
     "text": "Contact\n\n\n\n\n\n\n\n\n\nFeel free to contact me via email.\n\n martin_preiss@mail.de"
   },
   {
-    "objectID": "projects.html",
-    "href": "projects.html",
-    "title": "Projects",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "\nMartin Preiß\n",
     "section": "",
-    "text": "A selection of projects in data analysis, machine learning and computational social science.\n\n\n\n\n\n\n\n\nSatellite Image Classification\n\n\nClassification of satellite imagery using convolutional neural networks and the EuroSAT dataset to identify different land-use and land-cover categories.\n\n\nPython TensorFlow Keras EuroSAT CNN\n\n\nProject documentation coming soon\n\n\n\n\n\nFurther Projects\n\n\n\n\nComing soon"
+    "text": "Political Science | Data Science\n\n\nMartin Preiß\n\n\n\n\n\nI am a political scientist with a Master’s degree from the University of Freiburg. My research interests lie at the intersection of political science and data science, with a focus on political behaviour and quantitative research methods.\n\n\nI am interested in the application of machine learning and computational methods to social science research. My previous work includes electoral research, survey data analysis and the exploration of AI-based research methods.\n\nExplore my research →\n\n\n\nResearch Interests\n\n\n\n\n\nPolitical Behaviour\n\n\nVoting behaviour, electoral participation and public opinion\n\n\n\n\n\nQuantitative Research\n\n\nSurvey research, statistical modelling and causal inference\n\n\n\n\n\nComputational Social Science\n\n\nMachine learning and computational research methods\n\n\n\n\n\nArtificial Intelligence\n\n\nApplications of AI in social science and its political and ethical implications\n\n\n\n\n\nPolitical Communication\n\n\nDigital public spheres and political microtargeting\n\n\n\n\n\nInternational Relations\n\n\nGeoeconomics and technology policy\n\n\n\n\nSelected Projects\n\n\n\n\n\n\n\n\nExplaining Voter Turnout\n\nMaster’s Thesis · R · Machine Learning\n\nComparing classical statistical methods and machine learning approaches to explain voter turnout.\n\n\n\n\n\n\n\n\n\nSatellite Image Classification\n\nPython · TensorFlow · Deep Learning\n\nLand-use and land-cover classification using convolutional neural networks.\n\n\n\n\n\n\n\n\n\nSynthetic Survey Data\n\nPython · LLMs · AI Agents\n\nExploring the potential of large language models for generating synthetic survey respondents.\n\n\n\n\nView all projects →\n\nMethods & Tools\n\n\n\nProgramming\n\n\nR Python SQL\n\n\nResearch Methods\n\n\nSurvey Analysis Regression Analysis Machine Learning Data Visualisation\n\n\nSoftware & Tools\n\n\nGit GitHub Quarto LaTeX QGIS TensorFlow"
+  },
+  {
+    "objectID": "research.html",
+    "href": "research.html",
+    "title": "Research",
+    "section": "",
+    "text": "Master’s Thesis\n\n\n\nMaster’s Thesis · 2026\n\n\nWelche Faktoren erklären Wahlbeteiligung? Ein Vergleich erklärender statistischer mit explorativen Machine-Learning Ansätzen am Beispiel der Bundestagswahl 2017\n\n\nMartin Preiß\n\n\nDepartment of Political Science · University of Freiburg\n\n\n\nAbstract\n\n\nThis thesis examines voter turnout in the 2017 German federal election using data from the GESIS Panel Core Studies. A theory-driven logistic regression model with 12 predictors is compared with two exploratory machine learning models, Random Forest and XGBoost, trained on 222 predictors.\n\n\nAll three models identify previous electoral participation, voting norms and political interest as central predictors. Machine learning additionally reveals patterns related to media consumption and political trust, while offering modest improvements in predictive performance. The findings highlight the complementary role of explanatory and predictive modelling in political science.\n\n\nVoter Turnout Electoral Research Machine Learning Logistic Regression Random Forest XGBoost GESIS Panel R\n\n  Read Thesis (PDF) \n\n\nFurther Research\n\n\n\n\nComing soon"
   }
 ]

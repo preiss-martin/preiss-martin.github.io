@@ -1,0 +1,26 @@
+---
+title: "Satellite Image Classification"
+page-layout: full
+---
+
+[← Back to projects](projects.qmd)
+
+This project explores how deep learning can automate land-cover classification from multispectral Sentinel-2 satellite imagery. The convolutional neural network (CNN) distinguishes vegetation from non-vegetation. Such methods can support environmental monitoring, agricultural analysis and urban planning by reducing the need for manual image interpretation. This demonstration illustrates binary patch classification, not a complete monitoring system.
+
+**98.37%** reported test accuracy · **27,000** dataset images · **2,700** test images
+
+## Interactive demo
+
+Choose an example image and run the trained model directly in your browser.
+
+```{=html}
+<iframe src="files/satellite-demo/index.html" title="Interactive satellite image classifier" style="width:100%;height:1020px;border:1px solid #dfe6ec;border-radius:8px;background:#fff;"></iframe>
+```
+
+::: {.callout-note collapse="true"}
+## About the model
+
+The CNN uses red, near-infrared and NDVI inputs from EuroSAT-MS. The reported accuracy comes from a random held-out test split and does not establish geographic generalisation. Demo images may overlap the training data. The model groups entire patches, rather than assigning a land-cover class to each pixel.
+
+Dataset: [EuroSAT (Helber et al.)](https://github.com/phelber/EuroSAT).
+:::

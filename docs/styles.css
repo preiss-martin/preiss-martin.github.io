@@ -643,3 +643,49 @@ a:hover {
 .contact-page {
     padding-top: 30px;
 }
+
+
+/* Projects page */
+
+.projects-page .intro {
+    max-width: none;
+    width: 100%;
+}
+
+.projects-page .portfolio-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 25px;
+    margin-bottom: 40px;
+}
+
+.projects-page .portfolio-card {
+    background: #ffffff;
+    border: 1px solid #dfe6ec;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.projects-page .portfolio-cover {
+    width: 100%;
+    background: #f8fbfc;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+.projects-page .portfolio-cover img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: 450px;
+    object-fit: contain;
+    margin: 0 auto;
+}
+
+.projects-page .portfolio-content {
+    padding: 25px;
+}
+
+.projects-page .portfolio-content h3 {
+    margin-top: 0;
+}
