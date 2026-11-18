@@ -689,3 +689,51 @@ a:hover {
 .projects-page .portfolio-content h3 {
     margin-top: 0;
 }
+
+/* Compact research cards */
+
+.research-grid {
+    gap: 16px;
+}
+
+.research-card {
+    padding: 18px;
+    min-height: 0;
+}
+
+.research-card h3 {
+    font-size: 1.05rem;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.research-card p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin-bottom: 0;
+}
+
+.research-icon {
+    font-size: 1.6rem;
+}
+
+/* Full-width introduction */
+
+.hero {
+    display: block;
+    width: 100%;
+    max-width: none;
+}
+
+.hero-text {
+    width: 100%;
+    max-width: none;
+}
+
+.hero .intro {
+    width: 100%;
+    max-width: none;
+    font-size: 1.05rem;
+    line-height: 1.75;
+    margin-bottom: 18px;
+}
