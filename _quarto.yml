@@ -2,6 +2,9 @@
 project:
   type: website
   output-dir: docs
+  resources:
+    - "files/**"
+    - "google*.html"
   render:
     - "*.qmd"
     - "!cv.qmd"
